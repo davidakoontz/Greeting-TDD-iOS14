@@ -10,6 +10,8 @@ import XCTest
 
 class Greeting_TDDTests: XCTestCase {
 
+    var greeter = Greet()
+    
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -18,16 +20,15 @@ class Greeting_TDDTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    // Write a method greet(name) that interpolates name in a simple greeting.
+    // For example, when name is "David", the method should return a string "Hello David.".
+    func testSimpleGreeting() {
+        let name = "David"
+        let simpleGreeting = greeter.greeting(name: name)
+        
+        XCTAssert(simpleGreeting.count >= 6)
+        XCTAssert(simpleGreeting.elementsEqual("Hello David"),  "should be a nice simple Hello David")
+        
     }
 
 }

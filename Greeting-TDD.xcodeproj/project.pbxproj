@@ -15,6 +15,7 @@
 		6344228A24B6A1CD0036DA4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6344228824B6A1CD0036DA4A /* LaunchScreen.storyboard */; };
 		6344229524B6A1CD0036DA4A /* Greeting_TDDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6344229424B6A1CD0036DA4A /* Greeting_TDDTests.swift */; };
 		634422A024B6A1CD0036DA4A /* Greeting_TDDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6344229F24B6A1CD0036DA4A /* Greeting_TDDUITests.swift */; };
+		634422AE24B6A5C00036DA4A /* Greet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634422AD24B6A5C00036DA4A /* Greet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		6344229B24B6A1CD0036DA4A /* Greeting-TDDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Greeting-TDDUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6344229F24B6A1CD0036DA4A /* Greeting_TDDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Greeting_TDDUITests.swift; sourceTree = "<group>"; };
 		634422A124B6A1CD0036DA4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		634422AD24B6A5C00036DA4A /* Greet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Greet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				6344227D24B6A1CC0036DA4A /* AppDelegate.swift */,
 				6344227F24B6A1CC0036DA4A /* SceneDelegate.swift */,
 				6344228124B6A1CC0036DA4A /* ViewController.swift */,
+				634422AD24B6A5C00036DA4A /* Greet.swift */,
 				6344228324B6A1CC0036DA4A /* Main.storyboard */,
 				6344228624B6A1CD0036DA4A /* Assets.xcassets */,
 				6344228824B6A1CD0036DA4A /* LaunchScreen.storyboard */,
@@ -259,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6344228224B6A1CC0036DA4A /* ViewController.swift in Sources */,
+				634422AE24B6A5C00036DA4A /* Greet.swift in Sources */,
 				6344227E24B6A1CC0036DA4A /* AppDelegate.swift in Sources */,
 				6344228024B6A1CC0036DA4A /* SceneDelegate.swift in Sources */,
 			);
