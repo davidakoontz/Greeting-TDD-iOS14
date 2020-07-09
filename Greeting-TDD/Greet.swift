@@ -9,11 +9,13 @@ import Foundation
 
 struct Greet {
     
-    // Req #1.  Write a method greet(name) that interpolates name in a simple greeting.
-    //          For example, when name is "David", the method should return a string "Hello David".
-    func greeting(name: String) -> String {
-        let greeting = "Hello, \(name)."
+    
+    func greeting(name: String?) -> String {
+        // use the  ?? nil coalescing operator - returns the left side if it's non-nil, otherwise it returns the right side.
+        // then use the String isEmpty method in the conditional (ternary) operator to inject the default "buddy" if needed.
+        let greeting = "Hello, \((name ?? "").isEmpty ? "buddy" : name!)."
         return greeting
+          
     }
     
 }

@@ -38,4 +38,22 @@ class Greeting_TDDTests: XCTestCase {
         
         XCTAssert(simpleGreeting.elementsEqual("Hello, David."),  "should be punctuated: Hello, David.")
     }
+  
+    // Handle nulls by introducing a stand-in.
+    // For example, when name is null or empty, then the method should return the string "Hello, buddy."
+    func testForEmptyString() {
+        let name = ""
+        let simpleGreeting = greeter.greeting(name: name)
+        let expectedGreeting = "Hello, buddy."
+        
+        XCTAssert(simpleGreeting.elementsEqual(expectedGreeting),  "\(simpleGreeting) should be written: Hello, buddy.")
+    }
+
+    func testForNilString() {
+        let name: String? = nil
+        let simpleGreeting = greeter.greeting(name: name)
+        let expectedGreeting = "Hello, buddy."
+        
+        XCTAssert(simpleGreeting.elementsEqual(expectedGreeting),  "\(simpleGreeting) should be written: Hello, buddy.")
+    }
 }

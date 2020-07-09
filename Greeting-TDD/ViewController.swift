@@ -9,17 +9,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var greeter = Greet()
+    
+    @IBOutlet weak var greetingLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        greeting(name: "David")
+        greetingLabel.text = greeter.greeting(name: "")
     }
 
-    @IBOutlet weak var greetingLabel: UILabel!
+  
     
-    func greeting(name: String) {
-        let greeting = "Hello \(name)"
-        greetingLabel.text = greeting
-    }
 }
 
