@@ -21,14 +21,21 @@ class Greeting_TDDTests: XCTestCase {
     }
 
     // Write a method greet(name) that interpolates name in a simple greeting.
-    // For example, when name is "David", the method should return a string "Hello David.".
+    // For example, when name is "David", the method should return a string "Hello David".
     func testSimpleGreeting() {
         let name = "David"
         let simpleGreeting = greeter.greeting(name: name)
         
         XCTAssert(simpleGreeting.count >= 6)
-        XCTAssert(simpleGreeting.elementsEqual("Hello David"),  "should be a nice simple Hello David")
         
     }
 
+    // Modify the existing greet(name) so that proper punctuation is included.
+    // For example, when name is "David", the method should return a string "Hello, David."
+    func testPunctuation() {
+        let name = "David"
+        let simpleGreeting = greeter.greeting(name: name)
+        
+        XCTAssert(simpleGreeting.elementsEqual("Hello, David."),  "should be punctuated: Hello, David.")
+    }
 }

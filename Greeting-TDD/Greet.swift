@@ -9,8 +9,10 @@ import Foundation
 
 struct Greet {
     
+    // Req #1.  Write a method greet(name) that interpolates name in a simple greeting.
+    //          For example, when name is "David", the method should return a string "Hello David".
     func greeting(name: String) -> String {
-        let greeting = "Hello \(name)"
+        let greeting = "Hello, \(name)."
         return greeting
     }
     
